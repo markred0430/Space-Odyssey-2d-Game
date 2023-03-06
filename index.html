@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="link: https://www.fontspace.com/space-mission-font-f56190"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ccbd4d6bc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Space Odyssey</title>
+  </head>
+  <body>
+    <div class="screen">
+      <i class="fas fa-volume-mute fa-2x" id="sound"></i>
+      <video
+        autoplay
+        loop
+        muted
+        id="videoBackground"
+        src="background.mp4"
+        type="video/mp4"
+      ></video>
+      <audio
+        src="./Menu Sounds/sound/ui/buttonclick.wav"
+        type="audio/wav"
+        id="audioClick"
+      ></audio>
+      <audio
+        src="./Menu Sounds/sound/ui/buttonrollover.wav"
+        type="audio/wav"
+        id="audioHover"
+      ></audio>
+
+      <div class="menu">
+        <h1>Space-Odyssey</h1>
+        <h3>2d Game</h3>
+        <ul>
+          <li><a href="./Story Mode/Narration/Level 1/index.html">Story Mode</a></li>
+          <li><a href="./Endless Mode/index.html">Endless Mode</a></li>
+          <li><a href="./Control/index.html">Controls</a></li>
+          <li><a href="./Informations/index.html">Information</a></li>
+          <li id="quit" onclick="javascript:window.close('','_parent','');">
+          <a href="#">Quit</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
